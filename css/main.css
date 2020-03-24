@@ -1,5 +1,6 @@
-body{
-    font-family: "Tahoma, Georgia";
+html {
+    box-sizing: border-box;
+    font-family: Tahoma, Georgia;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
