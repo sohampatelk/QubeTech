@@ -1,5 +1,4 @@
-
-
+/* CSS code is for only navigation bar */
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -8,7 +7,6 @@
   width: 100%;
   flex-wrap: wrap;
 }
-
 .logo {
   padding: 10px;
   height: 60px;
@@ -23,12 +21,11 @@
   list-style: none;
   flex-wrap: wrap;
 }
-
 .nav a {
   margin: 10px;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and smaller phones, 760px and less) */
 @media only screen and (max-width: 760px) {
     .navigation {
       display: flex;
