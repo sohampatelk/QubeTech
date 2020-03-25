@@ -72,12 +72,12 @@ right connector from last child*/
 }
 
 .tree li a{
-	border: 1px solid #ccc;
-	padding: 15px 20px;
+	border: 2px solid #ccc;
+	padding: 15px 15px;
 	text-decoration: none;
 	color: #666;
 	font-family: Tahoma, Georgia;
-	font-size: 14px;
+	font-size: 15px;
 	display: inline-block;
 	
 	border-radius: 5px;

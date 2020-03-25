@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,20 @@
     <meta name="description" content="Affortable and Professional Project Management Consultant">
     <meta name="keywords" content="Projematic, Project Management LifeCycle,  PMP">
     <meta name="author" content="Priscilla">
-    
+
     <title>QubeTech Projematic Website</title>
 
     <!-- Vendor Styles -->
-    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css"> <!--Bootsrap setup-->
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <!--Bootsrap setup-->
     <link rel="stylesheet" href="./css/flowchart.css">
 
 
     <!-- Vendor Scripts -->
-    <script type="text/javascript" src="./vendor/jquery/jquery.min.js"></script>  <!--Bootsrap setup-->
-    <script type="text/javascript" src="./vendor/bootstrap/js/bootstrap.min.js"></script>  <!--Bootsrap setup-->
+    <script type="text/javascript" src="./vendor/jquery/jquery.min.js"></script>
+    <!--Bootsrap setup-->
+    <script type="text/javascript" src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--Bootsrap setup-->
 
     <!-- Styles -->
     <link rel="stylesheet" href="./css/reset.css">
@@ -28,16 +32,17 @@
     <!-- Scripts -->
     <script type="text/javascript" src="./js/scripts.js" defer></script>
 </head>
+
 <body>
     <!-- Header - Navigation bar design by bootstrap and manual navigation-bar.css file -->
     <header class="navigation">
-        <a href="#"> <img src="./img/logo-wide.png" class="logo" alt="company logo" ></a>
-         <nav class="nav">
-           <a class="p-2 text-dark" href="#">Home</a>
-           <a class="p-2 text-dark" href="#">Subscription</a>
-           <a class="p-2 text-dark" href="#">LinkedIn</a>
-           <a class="btn btn-outline-primary" href="#" >Sign Up</a>
-         </nav>
+        <a href="#"> <img src="./img/logo-wide.png" class="logo" alt="company logo"></a>
+        <nav class="nav">
+            <a class="p-2 text-dark" href="#">Home</a>
+            <a class="p-2 text-dark" href="#">Subscription</a>
+            <a class="p-2 text-dark" href="#">LinkedIn</a>
+            <a class="btn btn-outline-primary" href="#">Sign Up</a>
+        </nav>
     </header>
 
     <!-- Flow Chart -->
@@ -48,38 +53,101 @@
     <div class="tree">
         <ul>
             <li>
-                <a href="#">Project Management LifeCycle</a>
+                <a href="#" class="btn btn-primary btn-lg active" role="button"
+                aria-pressed="true">Project Management LifeCycle</a>
                 <ul>
                     <li>
-                        <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Pre-Project</a>
+                        <a href="#" class="btn btn-primary btn-lg active" role="button"
+                            aria-pressed="true">Pre-Project</a>
                         <ul>
                             <li>
-                                <a   class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Buisness-Cases</a>
+                                <a href="#">Buisness-Cases</a>
                                 <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L60,208C120,224,240,256,360,240C480,224,600,160,720,138.7C840,117,960,139,1080,165.3C1200,192,1320,224,1380,240L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>-->
-                                <div class="collapse" id="collapseExample">
-                                    <div class="card card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                                    </div>
-                                </div>
                             </li>
                         </ul>
 
                     </li>
                     <li>
-                        <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Initiation</a>
-
+                        <a href="#" class="btn btn-primary btn-lg active" role="button"
+                            aria-pressed="true">Initiation</a>
                         <ul>
                             <li>
                                 <a href="#">Project Charter/StekeHolder</a>
                                 <ul>
                                     <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L60,208C120,224,240,256,360,240C480,224,600,160,720,138.7C840,117,960,139,1080,165.3C1200,192,1320,224,1380,240L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-                                            Stake Holder <svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,128L60,154.7C120,181,240,235,360,261.3C480,288,600,288,720,240C840,192,960,96,1080,48C1200,0,1320,0,1380,0L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+                                        <a href="#" type="button" data-toggle="modal" data-target="#exampleModalLong">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100px" 
+                                                viewBox="0 0 1440 320">
+                                                <path fill="#0099ff" fill-opacity="1"
+                                                    d="M0,192L60,208C120,224,240,256,360,240C480,224,600,160,720,138.7C840,117,960,139,1080,165.3C1200,192,1320,224,1380,240L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                                                </path>
+                                            </svg>
+                                            Stake Holder <svg xmlns="http://www.w3.org/2000/svg" width="100px"
+                                                viewBox="0 0 1440 320">
+                                                <path fill="#a2d9ff" fill-opacity="1"
+                                                    d="M0,128L60,154.7C120,181,240,235,360,261.3C480,288,600,288,720,240C840,192,960,96,1080,48C1200,0,1320,0,1380,0L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                                                </path>
+                                            </svg>
+
                                         </a>
+                                        <!-- Code for popup box in div element stakeholder -->
+                                        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">Stake Holder
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        This is an Example for pop up box
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <ul>
                                             <li>
-                                                <a href="#">Statement of Work</a>
-                                                
+                                                <a href="#" type="button" data-toggle="modal"
+                                                    data-target="#exampleModalLong1">
+
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="100px"
+                                                        viewBox="0 0 1440 320">
+                                                        <path fill="#0099ff" fill-opacity="1"
+                                                            d="M0,192L60,208C120,224,240,256,360,240C480,224,600,160,720,138.7C840,117,960,139,1080,165.3C1200,192,1320,224,1380,240L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                                                        </path>
+                                                    </svg>
+                                                    Statement of Work <svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="100px" viewBox="0 0 1440 320">
+                                                        <path fill="#a2d9ff" fill-opacity="1"
+                                                            d="M0,128L60,154.7C120,181,240,235,360,261.3C480,288,600,288,720,240C840,192,960,96,1080,48C1200,0,1320,0,1380,0L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+                                                <!-- Code for popup box in div element Statement of Work -->
+                                                <div class="modal fade" id="exampleModalLong1" tabindex="-1"
+                                                    role="dialog" aria-labelledby="exampleModalLongTitle"
+                                                    aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLongTitle">
+                                                                    Statement of Work
+                                                                </h5>
+                                                                <button type="button" class="close" data-dismiss="modal"
+                                                                    aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                This is an Example for staement of work pop up box
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </li>
                                         </ul>
                                     </li>
@@ -101,7 +169,7 @@
                                                 <ul>
                                                     <li>
                                                         <a href="#">Quality mgnt plan/change mgnt plan</a>
-                                                        
+
                                                     </li>
                                                 </ul>
                                             </li>
@@ -112,7 +180,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Execution</a>
+                        <a href="#" class="btn btn-primary btn-lg active" role="button"
+                            aria-pressed="true">Execution</a>
                         <ul>
                             <li>
                                 <a href="#">Project Status Report</a>
@@ -127,8 +196,9 @@
                                                         <a href="#">Communication with StakeHolder/ Assign Resources</a>
                                                         <ul>
                                                             <li>
-                                                                <a href="#">Implement Quality Measure/ Perform Testing</a>
-                                                                
+                                                                <a href="#">Implement Quality Measure/ Perform
+                                                                    Testing</a>
+
                                                             </li>
                                                         </ul>
                                                     </li>
@@ -158,7 +228,7 @@
                                                         <ul>
                                                             <li>
                                                                 <a href="#">Close Procurement Contracts</a>
-                                                                
+
                                                             </li>
                                                         </ul>
                                                     </li>
@@ -172,9 +242,9 @@
                     </li>
                 </ul>
             </li>
-        </ul>   
+        </ul>
     </div>
 
-
 </body>
+
 </html>
