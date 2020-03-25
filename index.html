@@ -14,7 +14,6 @@
     <!-- Vendor Styles -->
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
     <!--Bootsrap setup-->
-    <link rel="stylesheet" href="./css/flowchart.css">
 
 
     <!-- Vendor Scripts -->
@@ -27,7 +26,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/navigation-bar.css">
-
+    <link rel="stylesheet" href="./css/flowchart.css">
 
     <!-- Scripts -->
     <script type="text/javascript" src="./js/scripts.js" defer></script>
@@ -46,11 +45,12 @@
     </header>
 
     <!-- Flow Chart -->
-    <!--
-    We will create a family tree using just CSS(3)
+    <!-- //citation: http://thecodeplayer.com/walkthrough/css3-family-tree
+    We will create a tree using just CSS(3)
     The markup will be simple nested lists
     -->
-    <div class="tree">
+    
+    <seciton class="tree">
         <ul>
             <li>
                 <a href="#" class="btn btn-primary btn-lg active" role="button"
@@ -61,8 +61,36 @@
                             aria-pressed="true">Pre-Project</a>
                         <ul>
                             <li>
-                                <a href="#">Buisness-Cases</a>
-                                <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L60,208C120,224,240,256,360,240C480,224,600,160,720,138.7C840,117,960,139,1080,165.3C1200,192,1320,224,1380,240L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>-->
+                                <a href="#" type="button" data-toggle="modal" data-target="#exampleModalLong-businesscase">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 1440 320">
+                                        <path fill="#0099ff" fill-opacity="1"
+                                            d="M0,192L60,208C120,224,240,256,360,240C480,224,600,160,720,138.7C840,117,960,139,1080,165.3C1200,192,1320,224,1380,240L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                                        </path>
+                                    </svg>
+                                    Business Case <svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 1440 320">
+                                        <path fill="#a2d9ff" fill-opacity="1"
+                                            d="M0,128L60,154.7C120,181,240,235,360,261.3C480,288,600,288,720,240C840,192,960,96,1080,48C1200,0,1320,0,1380,0L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <!-- Code for popup box in div element Business case -->
+                                <div class="modal fade" id="exampleModalLong-businesscase" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">
+                                                    Businesscase </h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                This is an Example for Business Case pop up box
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
 
@@ -72,7 +100,37 @@
                             aria-pressed="true">Initiation</a>
                         <ul>
                             <li>
-                                <a href="#">Project Charter/StekeHolder</a>
+                                <a href="#" type="button" data-toggle="modal" data-target="#exampleModalLong-projectcharter">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 1440 320">
+                                        <path fill="#0099ff" fill-opacity="1"
+                                            d="M0,192L60,208C120,224,240,256,360,240C480,224,600,160,720,138.7C840,117,960,139,1080,165.3C1200,192,1320,224,1380,240L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                                        </path>
+                                    </svg>
+                                    Project Charter<svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 1440 320">
+                                        <path fill="#a2d9ff" fill-opacity="1"
+                                            d="M0,128L60,154.7C120,181,240,235,360,261.3C480,288,600,288,720,240C840,192,960,96,1080,48C1200,0,1320,0,1380,0L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <!-- Code for popup box in div element Project Charter/Project StakeHolder -->
+                                <div class="modal fade" id="exampleModalLong-projectcharter" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">
+                                                    Project Charter</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                This is an Example for Project Charter pop up box
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <ul>
                                     <li>
                                         <a href="#" type="button" data-toggle="modal" data-target="#exampleModalLong">
@@ -104,7 +162,7 @@
                                                         </button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        This is an Example for pop up box
+                                                        This is an Example for Stake Holder pop up box
                                                     </div>
                                                 </div>
                                             </div>
@@ -112,7 +170,7 @@
                                         <ul>
                                             <li>
                                                 <a href="#" type="button" data-toggle="modal"
-                                                    data-target="#exampleModalLong1">
+                                                    data-target="#exampleModalLong-statementofwork">
 
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="100px"
                                                         viewBox="0 0 1440 320">
@@ -128,7 +186,7 @@
                                                     </svg>
                                                 </a>
                                                 <!-- Code for popup box in div element Statement of Work -->
-                                                <div class="modal fade" id="exampleModalLong1" tabindex="-1"
+                                                <div class="modal fade" id="exampleModalLong-statementofwork" tabindex="-1"
                                                     role="dialog" aria-labelledby="exampleModalLongTitle"
                                                     aria-hidden="true">
                                                     <div class="modal-dialog" role="document">
@@ -158,18 +216,137 @@
                     <li>
                         <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Planning</a>
                         <ul>
-                            <li>
-                                <a href="#">Project Mgnt Plan</a>
+                            <li>                                
+                                <a href="#" type="button" data-toggle="modal" data-target="#exampleModalLong-projectmgntplan">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 1440 320">
+                                        <path fill="#0099ff" fill-opacity="1"
+                                            d="M0,192L60,208C120,224,240,256,360,240C480,224,600,160,720,138.7C840,117,960,139,1080,165.3C1200,192,1320,224,1380,240L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                                        </path>
+                                    </svg>
+                                    Project Mgnt Plan<svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 1440 320">
+                                        <path fill="#a2d9ff" fill-opacity="1"
+                                            d="M0,128L60,154.7C120,181,240,235,360,261.3C480,288,600,288,720,240C840,192,960,96,1080,48C1200,0,1320,0,1380,0L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <!-- Code for popup box in div element Project Mgnt Plan -->
+                                <div class="modal fade" id="exampleModalLong-projectmgntplan" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">
+                                                    Project Mgnt Plan</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                This is an Example for Project Mgnt Plan pop up box
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                                              
+
                                 <ul>
                                     <li>
-                                        <a href="#">Scope Management, Risk Management</a>
+                                        <a href="#" type="button" data-toggle="modal" data-target="#exampleModalLong-scopemgnt">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 1440 320">
+                                                <path fill="#0099ff" fill-opacity="1"
+                                                    d="M0,192L60,208C120,224,240,256,360,240C480,224,600,160,720,138.7C840,117,960,139,1080,165.3C1200,192,1320,224,1380,240L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                                                </path>
+                                            </svg>
+                                            Scope Management/<br/>Risk Management<svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 1440 320">
+                                                <path fill="#a2d9ff" fill-opacity="1"
+                                                    d="M0,128L60,154.7C120,181,240,235,360,261.3C480,288,600,288,720,240C840,192,960,96,1080,48C1200,0,1320,0,1380,0L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <!-- Code for popup box in div element Scope Management, Risk Management -->
+                                        <div class="modal fade" id="exampleModalLong-scopemgnt" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">
+                                                            Scope Management, Risk Management</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        This is an Example for Scope Management, Risk Management pop up box
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
                                         <ul>
-                                            <li>
-                                                <a href="#">WBS/Budget/ Schedule</a>
+                                            <li>                                            
+                                                <a href="#" type="button" data-toggle="modal" data-target="#exampleModalLong-wbs">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 1440 320">
+                                                        <path fill="#0099ff" fill-opacity="1"
+                                                            d="M0,192L60,208C120,224,240,256,360,240C480,224,600,160,720,138.7C840,117,960,139,1080,165.3C1200,192,1320,224,1380,240L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                                                        </path>
+                                                    </svg>
+                                                    WBS/Budget/<br/>Schedule<svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 1440 320">
+                                                        <path fill="#a2d9ff" fill-opacity="1"
+                                                            d="M0,128L60,154.7C120,181,240,235,360,261.3C480,288,600,288,720,240C840,192,960,96,1080,48C1200,0,1320,0,1380,0L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+                                                <!-- Code for popup box in div element WBS/Budget/ Schedule -->
+                                                <div class="modal fade" id="exampleModalLong-wbs" tabindex="-1" role="dialog"
+                                                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLongTitle">
+                                                                    WBS/Budget/ Schedule</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                This is an Example for WBS/Budget/ Schedule pop up box
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
                                                 <ul>
                                                     <li>
-                                                        <a href="#">Quality mgnt plan/change mgnt plan</a>
-
+                                                        <a href="#" type="button" data-toggle="modal" data-target="#exampleModalLong-qualitymgnt">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 1440 320">
+                                                                <path fill="#0099ff" fill-opacity="1"
+                                                                    d="M0,192L60,208C120,224,240,256,360,240C480,224,600,160,720,138.7C840,117,960,139,1080,165.3C1200,192,1320,224,1380,240L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                                                                </path>
+                                                            </svg>
+                                                            Quality mgnt plan/<br/>change mgnt plan<svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 1440 320">
+                                                                <path fill="#a2d9ff" fill-opacity="1"
+                                                                    d="M0,128L60,154.7C120,181,240,235,360,261.3C480,288,600,288,720,240C840,192,960,96,1080,48C1200,0,1320,0,1380,0L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                        <!-- Code for popup box in div element Quality mgnt plan/change mgnt plan -->
+                                                        <div class="modal fade" id="exampleModalLong-qualitymgnt" tabindex="-1" role="dialog"
+                                                            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                                            <div class="modal-dialog" role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLongTitle">
+                                                                            Quality mgnt plan/change mgnt plan</h5>
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        This is an Example for Quality mgnt plan/change mgnt plan pop up box
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
                                                     </li>
                                                 </ul>
                                             </li>
@@ -184,13 +361,103 @@
                             aria-pressed="true">Execution</a>
                         <ul>
                             <li>
-                                <a href="#">Project Status Report</a>
+                                <a href="#" type="button" data-toggle="modal" data-target="#exampleModalLong-statusreport">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 1440 320">
+                                        <path fill="#0099ff" fill-opacity="1"
+                                            d="M0,192L60,208C120,224,240,256,360,240C480,224,600,160,720,138.7C840,117,960,139,1080,165.3C1200,192,1320,224,1380,240L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                                        </path>
+                                    </svg>
+                                    Project Status<br/>Report<svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 1440 320">
+                                        <path fill="#a2d9ff" fill-opacity="1"
+                                            d="M0,128L60,154.7C120,181,240,235,360,261.3C480,288,600,288,720,240C840,192,960,96,1080,48C1200,0,1320,0,1380,0L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <!-- Code for popup box in div element Project Status Report -->
+                                <div class="modal fade" id="exampleModalLong-statusreport" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">
+                                                    Project Status Report</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                This is an Example for Project Status Report pop up box
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                                 <ul>
                                     <li>
-                                        <a href="#">Monitor / Control Risks</a>
+                                        <a href="#" type="button" data-toggle="modal" data-target="#exampleModalLong-monitor">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 1440 320">
+                                                <path fill="#0099ff" fill-opacity="1"
+                                                    d="M0,192L60,208C120,224,240,256,360,240C480,224,600,160,720,138.7C840,117,960,139,1080,165.3C1200,192,1320,224,1380,240L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                                                </path>
+                                            </svg>
+                                            Monitor/<br/>Control Risks<svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 1440 320">
+                                                <path fill="#a2d9ff" fill-opacity="1"
+                                                    d="M0,128L60,154.7C120,181,240,235,360,261.3C480,288,600,288,720,240C840,192,960,96,1080,48C1200,0,1320,0,1380,0L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <!-- Code for popup box in div element Project Monitor / Control Risks -->
+                                        <div class="modal fade" id="exampleModalLong-monitor" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">
+                                                            Monitor / Control Risks</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        This is an Example for Monitor / Control Risks pop up box
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
                                         <ul>
                                             <li>
-                                                <a href="#">Lessons Learned/Process Change</a>
+                                                <a href="#" type="button" data-toggle="modal" data-target="#exampleModalLong-lessonlearned">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 1440 320">
+                                                        <path fill="#0099ff" fill-opacity="1"
+                                                            d="M0,192L60,208C120,224,240,256,360,240C480,224,600,160,720,138.7C840,117,960,139,1080,165.3C1200,192,1320,224,1380,240L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                                                        </path>
+                                                    </svg>
+                                                    Lessons Learned/<br/>Process Change<svg xmlns="http://www.w3.org/2000/svg" width="100px" viewBox="0 0 1440 320">
+                                                        <path fill="#a2d9ff" fill-opacity="1"
+                                                            d="M0,128L60,154.7C120,181,240,235,360,261.3C480,288,600,288,720,240C840,192,960,96,1080,48C1200,0,1320,0,1380,0L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+                                                <!-- Code for popup box in div element Lessons Learned/Process Change -->
+                                                <div class="modal fade" id="exampleModalLong-lessonlearned" tabindex="-1" role="dialog"
+                                                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLongTitle">
+                                                                    Lessons Learned/Process Change</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                This is an Example for Lessons Learned/Process Change pop up box
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                                 <ul>
                                                     <li>
                                                         <a href="#">Communication with StakeHolder/ Assign Resources</a>
@@ -243,8 +510,56 @@
                 </ul>
             </li>
         </ul>
-    </div>
+    </section>
 
+
+
+
+<!-- This code for bottom container which holds important info, testimonial, contact us info -->
+
+<!-- <section class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h2>Column 1</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium fuga debitis iste dolor aut maxime fugit
+          nulla eligendi illum eius? tempora quaerat </p>
+        <p>
+          <a href="#" class="btn btn-primary">
+            Read More
+          </a>
+        </p>
+      </div>
+      <div class="col-sm">
+        <h2>Column 1</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque ab soluta veritatis debitis tempora
+          quaerat nam suscipit ratione eaque accusantium.</p>
+        <p>
+          <a href="#" class="btn btn-primary">
+            Read More
+          </a>
+        </p>
+      </div>
+      <div class="col-sm">
+        <h2>Contact Me</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt sint voluptas veritatis ut temporibus id
+          consequatur magnam recusandae animi consequuntur.</p>
+        <p>
+          <a href="#" class="btn btn-primary">
+            Read More
+          </a>
+        </p>
+      </div>
+    </div>
+</section>  -->
+
+
+<!-- This code is for footer- from bootstrap classes -->
+
+<!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; Projematic, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
 </body>
 
 </html>

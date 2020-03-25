@@ -1,6 +1,6 @@
-/*Now the CSS*/
+/* Now the CSS */
+/* citation: http://thecodeplayer.com/walkthrough/css3-family-tree */
 * {margin: 0; padding: 0;}
-
 
 .tree ul {
 	padding-top: 20px; position: relative;
@@ -72,8 +72,8 @@ right connector from last child*/
 }
 
 .tree li a{
-	border: 2px solid #ccc;
-	padding: 15px 15px;
+	border: 1px solid #ccc;
+	padding: 10px 10px;
 	text-decoration: none;
 	color: #666;
 	font-family: Tahoma, Georgia;
