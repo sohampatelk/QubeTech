@@ -1,7 +1,7 @@
-body{
+html{
     box-sizing: border-box;
     font-family: Tahoma, Georgia;
-    background:#fcf7f8;
+    background-color: #fcf7f8;
     color: #17255A;
 }
 

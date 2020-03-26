@@ -1,6 +1,7 @@
 /* Now the CSS for FlowChart */
 /* citation: http://thecodeplayer.com/walkthrough/css3-family-tree */
 
+
 .tree{
 	box-sizing: border-box;
 	width: 100%;
@@ -74,10 +75,10 @@ right connector from last child*/
 }
 
 .tree li a{
-	border: 1px solid #ccc;
+	border: 2px solid #C0C6D0;
 	padding: 10px 25px;
 	text-decoration: none;
-	color: #666;
+	color: #17255A;
 	font-family: Tahoma, Georgia;
 	font-size: 16px;
 	display: inline-block;
