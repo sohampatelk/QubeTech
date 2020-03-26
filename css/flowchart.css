@@ -1,10 +1,10 @@
-/* Now the CSS */
+/* Now the CSS for FlowChart */
 /* citation: http://thecodeplayer.com/walkthrough/css3-family-tree */
-
 
 .tree{
 	box-sizing: border-box;
 	width: 100%;
+	margin-left: 200px;
 }
 .tree ul {
 	padding-top: 20px; 
@@ -107,5 +107,10 @@ right connector from last child*/
 	border-color:  #94a0b4;
 }
 
-/*Thats all. I hope you enjoyed it.
-Thanks :)*/
+/* Media Queries */
+@media only screen and (max-width: 960px) {
+	.tree{margin-left: 100px;}
+}
+@media only screen and (max-width: 760px) {
+	.tree{margin-left: 0;}
+}
