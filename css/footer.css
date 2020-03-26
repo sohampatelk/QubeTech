@@ -1,0 +1,11 @@
+.page-footer {
+    position: ;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    background-color: #fcf7f8;
+    color: #17255A;
+    text-align: center;
+    grid-auto-rows: 0em;
+    
+}
