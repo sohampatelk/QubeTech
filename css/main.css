@@ -1,9 +1,6 @@
-body{
+html {
     box-sizing: border-box;
-    width: 100%;
     font-family: Tahoma, Georgia;
-    background:#fcf7f8;
-    color: #17255A;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -13,4 +10,19 @@ body{
 @media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 1024px) {
+    body {
+        grid-template-columns:
+            calc( 100% / 3 ) /* One third! */
+            calc( 100% / 6 ) /* Half of one third... */
+            calc( 100% / 6 ) /* Half of one third... */
+            calc( 100% / 3 ); /* One third! */
+        grid-template-rows: 35vw 35vw 35vw; /* Use auto, with real content, unless you're sure of a specific size! */
+        grid-template-areas:
+            "logo nav nav nav"
+            "tree chart-1 tree chart-1 tree chart-1 tree chart-1"
+            "page-footer font-small stylish-color-dark pt-4 page-footer font-small stylish-color-dark pt-4 page-footer font-small stylish-color-dark pt-4 page-footer font-small stylish-color-dark pt-4";
+    }
+
+    }
+
