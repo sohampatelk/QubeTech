@@ -4,7 +4,6 @@
 
 .tree{
 	box-sizing: border-box;
-
 	width: 100%;
 }
 .tree ul {
@@ -25,8 +24,6 @@
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 }
-
-
 
 /*We will use ::before and ::after to draw the connectors*/
 

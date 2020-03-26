@@ -1,11 +1,8 @@
 .page-footer {
-  
-    
-    bottom: 1px;
+    bottom: 0px;
     width: 100%;
     background-color: #fcf7f8;
     color: #17255A;
     text-align: center;
-    grid-auto-rows: 0em;
-    
+
 }
