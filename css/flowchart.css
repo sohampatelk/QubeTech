@@ -107,10 +107,10 @@ right connector from last child*/
 	border-color:  #94a0b4;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 960px) {
+/* Media Queries for Tablet and smaller Screens for flowchart*/
+@media only screen and (max-width: 1200px) {
 	.tree{margin-left: 100px;}
 }
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1100px) {
 	.tree{margin-left: 0;}
 }
